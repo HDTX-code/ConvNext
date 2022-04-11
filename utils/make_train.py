@@ -78,4 +78,4 @@ def make_train(model, metric_fc, criterion, optimizer, scheduler,
                 # print("第{}轮 : Score={}".format(i, Score))
         # if i >= 1:
         #     break
-    return model, Loss
+    return model
