@@ -163,8 +163,8 @@ def create_lr_scheduler(optimizer,
                         epochs: int,
                         warmup=True,
                         warmup_epochs=1,
-                        warmup_factor=1e-3,
-                        end_factor=1e-6):
+                        warmup_factor=1e-1,
+                        end_factor=1e-4):
     assert num_step > 0 and epochs > 0
     if warmup is False:
         warmup_epochs = 0
